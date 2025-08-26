@@ -7,7 +7,7 @@ const About = ({ setActiveSection }) => {
           <div className="about-content">
             <div className="about-text">
               <p>
-                I'm a passionate full-stack developer with 5+ years of experience creating 
+                I'm a passionate full-stack developer with 2+ years of experience creating 
                 web applications. I specialize in JavaScript technologies including React, 
                 Node.js, and Express, with a strong focus on responsive design and 
                 user experience.
@@ -25,15 +25,15 @@ const About = ({ setActiveSection }) => {
             </div>
             <div className="about-stats">
               <div className="stat">
-                <h3>5+</h3>
+                <h3>2+</h3>
                 <p>Years Experience</p>
               </div>
               <div className="stat">
-                <h3>24+</h3>
+                <h3>15+</h3>
                 <p>Projects Completed</p>
               </div>
               <div className="stat">
-                <h3>12+</h3>
+                <h3>10+</h3>
                 <p>Happy Clients</p>
               </div>
             </div>

@@ -20,7 +20,7 @@ const Skills = () => {
               <div key={index} className="skill-item">
                 <div className="skill-header">
                   <h3>{skill.name}</h3>
-                  <span>{skill.level}%</span>
+                  {/* <span>{skill.level}%</span> */}
                 </div>
                 <div className="skill-bar">
                   <div 

@@ -22,7 +22,7 @@ const Hero = ({ setActiveSection }) => {
     <>
       <section id="home" className="hero">
         <div className="hero-content">
-          <h1 className="hero-title">John Doe</h1>
+          <h1 className="hero-title">Chamishk Dinuwan</h1>
           <h2 className="hero-subtitle">Full Stack Developer</h2>
           <p className="hero-description">
             Creating innovative web solutions with modern technologies and user-centered design.
