@@ -47,7 +47,7 @@ const Hero = ({ setActiveSection }) => {
             <img 
               src="/myimage.jpg" 
               alt="Chamishk Dinuwan" 
-              style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover', }} 
+              style={{ width: '100%', height: '120%', borderRadius: '50%', objectFit: 'cover', }} 
             />
           </div>
         </div>
