@@ -1,3 +1,4 @@
+
 const About = ({ setActiveSection }) => {
   return (
     <>
@@ -41,92 +42,275 @@ const About = ({ setActiveSection }) => {
         </div>
 
         <style jsx>{`
-          .about {
-            padding: 6rem 2rem 4rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          }
+         .about {
+  padding: 8rem 2rem 6rem;
+  max-width: auto;
+  margin: 0 auto;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
 
-          .section-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            color: #111827;
-            margin-bottom: 3rem;
-            text-align: center;
-          }
+.about::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
 
-          .about-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 2rem;
-            flex-wrap: wrap;
-          }
+.about::after {
+  content: '';
+  position: absolute;
+  bottom: -50px;
+  left: -50px;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(239, 68, 68, 0.1) 100%);
+  border-radius: 50%;
+  z-index: -1;
+}
 
-          .about-text {
-            flex: 2;
-            min-width: 280px;
-            font-size: 1rem;
-            color: #4b5563;
-            line-height: 1.7;
-          }
+.section-title {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #111827;
+  margin-bottom: 4rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1.5rem;
+}
 
-          .about-text p {
-            margin-bottom: 1.5rem;
-          }
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%);
+  border-radius: 2px;
+}
 
-          .about-stats {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-            min-width: 200px;
-          }
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
 
-          .stat {
-            background-color: #f3f4f6;
-            padding: 1.5rem;
-            border-radius: 10px;
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-          }
+.about-text {
+  flex: 2;
+  min-width: 280px;
+  font-size: 1.1rem;
+  color: #4b5563;
+  line-height: 1.8;
+  position: relative;
+}
 
-          .stat:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-          }
+.about-text p {
+  margin-bottom: 1.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
 
-          .stat h3 {
-            font-size: 2rem;
-            color: #1d4ed8;
-            margin-bottom: 0.5rem;
-          }
+.about-text p::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.7em;
+  height: 8px;
+  width: 8px;
+  background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%);
+  border-radius: 50%;
+}
 
-          .stat p {
-            font-size: 1rem;
-            color: #374151;
-          }
+.about-stats {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  min-width: 220px;
+}
 
-          /* Responsive */
-          @media (max-width: 768px) {
-            .about-content {
-              flex-direction: column;
-              align-items: center;
-              text-align: center;
-            }
+.stat {
+  background: linear-gradient(145deg, #ffffff, #f8f9fa);
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
 
-            .about-stats {
-              flex-direction: row;
-              justify-content: center;
-              flex-wrap: wrap;
-              gap: 1rem;
-            }
+.stat::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.03) 0%, rgba(168, 85, 247, 0.03) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
 
-            .stat {
-              flex: 1 1 120px;
-            }
-          }
+.stat:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(99, 102, 241, 0.1);
+}
+
+.stat:hover::before {
+  opacity: 1;
+}
+
+.stat h3 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(90deg, #6366F1 0%, #EC4899 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+.stat:hover h3 {
+  transform: scale(1.1);
+}
+
+.stat p {
+  font-size: 1rem;
+  color: #6b7280;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.stat:hover p {
+  color: #4b5563;
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-text p {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.about-text p:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.about-text p:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about-text p:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.stat {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.stat:nth-child(1) {
+  animation-delay: 0.4s;
+}
+
+.stat:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.stat:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .about-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 6rem 1.5rem 4rem;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2.5rem;
+  }
+  
+  .about-text p::before {
+    display: none;
+  }
+  
+  .about-text p {
+    padding-left: 0;
+  }
+  
+  .about-stats {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    width: 100%;
+  }
+  
+  .stat {
+    flex: 1 1 140px;
+    min-width: 140px;
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 5rem 1rem 3rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .about-stats {
+    flex-direction: column;
+  }
+  
+  .stat {
+    width: 100%;
+  }
+}
         `}</style>
       </section>
     </>
