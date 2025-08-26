@@ -138,6 +138,7 @@ const About = ({ setActiveSection }) => {
   flex-direction: column;
   gap: 1.8rem;
   min-width: 220px;
+  shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
 
 .stat {
