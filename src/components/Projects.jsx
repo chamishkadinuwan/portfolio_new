@@ -1,17 +1,18 @@
+
 const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
+      title: 'MISP E+',
       description: 'A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database.',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-      image: '/placeholder-project.jpg',
+      technologies: ['React', 'Node.js', 'Firebase', 'Python Flask'],
+      image: 'misp.png',
       github: 'https://github.com',
       demo: 'https://example.com'
     },
     {
       id: 2,
-      title: 'Task Management App',
+      title: 'TeachMate',
       description: 'A collaborative task management application with real-time updates and team collaboration features.',
       technologies: ['React', 'Firebase', 'Material UI', 'Redux'],
       image: '/placeholder-project.jpg',

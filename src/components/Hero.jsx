@@ -44,7 +44,11 @@ const Hero = ({ setActiveSection }) => {
         </div>
         <div className="hero-image">
           <div className="image-placeholder">
-            <span>Your Photo</span>
+            <img 
+              src="/myimage.jpg" 
+              alt="Chamishk Dinuwan" 
+              style={{ width: '100%', height: '100%', borderRadius: '50%', objectFit: 'cover', }} 
+            />
           </div>
         </div>
       </section>
