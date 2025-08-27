@@ -7,34 +7,34 @@ const Projects = () => {
       description: 'A full-stack e-commerce solution with React frontend, Node.js backend, and MongoDB database.',
       technologies: ['React', 'Node.js', 'Firebase', 'Python Flask'],
       image: 'misp.png',
-      github: 'https://github.com',
+      github: 'https://github.com/chamishkadinuwan/mispe.git',
       demo: 'https://example.com'
     },
     {
       id: 2,
       title: 'TeachMate',
-      description: 'A collaborative task management application with real-time updates and team collaboration features.',
-      technologies: ['React', 'Firebase', 'Material UI', 'Redux'],
+      description: 'An AI-powered mobile e-learning app that uses the Gemini API to provide personalized lessons, interactive quizzes, and real-time learning assistance, optimized for on-the-go study.',
+      technologies: ['React Native', 'Firebase', 'Material UI', 'Gemini API'],
       image: '/placeholder-project.jpg',
-      github: 'https://github.com',
+      github: 'https://github.com/chamishkadinuwan/guru.git',
       demo: 'https://example.com'
     },
     {
       id: 3,
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application that displays current and forecasted weather data for any location.',
-      technologies: ['JavaScript', 'Weather API', 'CSS3', 'HTML5'],
-      image: '/placeholder-project.jpg',
-      github: 'https://github.com',
+      title: 'TechPulse',
+      description: 'A mobile news application built with Java and Firebase, delivering real-time tech updates and personalized news feeds.',
+      technologies: ['Java', 'Firebase','Material UI'],
+      image: '/techpuls2.jpeg',
+      github: 'https://github.com/chamishkadinuwan/techpulse.git',
       demo: 'https://example.com'
     },
     {
       id: 4,
-      title: 'Fitness Tracker',
-      description: 'A mobile-friendly fitness application that helps users track workouts and progress.',
-      technologies: ['React Native', 'Firebase', 'Chart.js', 'Node.js'],
+      title: 'Attendese',
+      description: 'A web-based attendance system built with HTML, CSS, PHP, and SQL database, enabling easy tracking and management of student or employee attendance.',
+      technologies: ['HTML', 'CSS', 'PHP', 'SQL database'],
       image: '/placeholder-project.jpg',
-      github: 'https://github.com',
+      github: 'https://github.com/chamishkadinuwan/attendese.git',
       demo: 'https://example.com'
     }
   ]

@@ -41,8 +41,9 @@ const About = ({ setActiveSection }) => {
           </div>
         </div>
 
-        <style jsx>{`
-         .about {
+        <style jsx>{
+  `
+  .about {
   padding: 8rem 2rem 6rem;
   max-width: auto;
   margin: 0 auto;
@@ -50,6 +51,7 @@ const About = ({ setActiveSection }) => {
   position: relative;
   overflow: hidden;
   text-align: center;
+
 }
 
 .about::before {

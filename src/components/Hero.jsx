@@ -53,8 +53,10 @@ const Hero = ({ setActiveSection }) => {
         </div>
       </section>
 
-      <style jsx>{`
-      .hero {
+      <style jsx>{
+      
+  `
+  .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -63,6 +65,7 @@ const Hero = ({ setActiveSection }) => {
   margin: 0 auto;
   gap: 3rem;
   flex-wrap: wrap-reverse;
+  
 }
 
 .hero-content {
