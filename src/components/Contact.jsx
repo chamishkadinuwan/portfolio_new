@@ -41,6 +41,10 @@ const Contact = () => {
                   <strong>Location:</strong>
                   <span>Colombo, Sri Lanks</span>
                 </div>
+                  <div className="contact-item">
+                  <strong>Phone:</strong>
+                  <span>+94 769963383</span>
+                </div>
               </div>
               <div className="social-links">
                 <a href="https://www.linkedin.com/in/chamishka-dinuwan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>

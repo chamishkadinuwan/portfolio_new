@@ -10,9 +10,8 @@ const Footer = () => {
               <p>&copy; {currentYear} John Doe. All rights reserved.</p>
             </div>
             <div className="footer-social">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+              <a href="https://www.linkedin.com/in/chamishka-dinuwan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a href="https://github.com/chamishkadinuwan" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </div>

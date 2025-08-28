@@ -7,9 +7,9 @@ const About = ({ setActiveSection }) => {
   const sectionRef = useRef(null)
 
   const stats = [
-    { number: '3+', label: 'Years Experience', icon: '🚀', color: '#6366F1' },
-    { number: '50+', label: 'Projects Completed', icon: '💼', color: '#EC4899' },
-    { number: '25+', label: 'Happy Clients', icon: '😊', color: '#10B981' },
+    { number: '2+', label: 'Years Experience', icon: '🚀', color: '#6366F1' },
+    { number: '10+', label: 'Projects Completed', icon: '💼', color: '#EC4899' },
+    { number: '5+', label: 'Happy Clients', icon: '😊', color: '#10B981' },
     { number: '15+', label: 'Technologies', icon: '⚡', color: '#F59E0B' }
   ]
 

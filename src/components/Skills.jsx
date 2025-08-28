@@ -162,7 +162,7 @@ const Skills = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="skill-percentage">
+                  <div className="skill-percentage" style={{display: 'none'}}>
                     <span className="percentage-number">{getSkillLevel(skill.name)}</span>
                     <span className="percentage-symbol">%</span>
                   </div>
@@ -538,9 +538,7 @@ const Skills = () => {
         }
 
         .skill-percentage {
-          display: flex;
-          align-items: baseline;
-          gap: 0.25rem;
+          display: none;
         }
 
         .percentage-number {

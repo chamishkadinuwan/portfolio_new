@@ -118,7 +118,7 @@ const Experience = () => {
   }, [])
 
   const getTotalExperience = () => {
-    const startDate = new Date('2017-06-01')
+    const startDate = new Date('2024-06-01')
     const currentDate = new Date()
     const diffTime = Math.abs(currentDate - startDate)
     const diffYears = Math.ceil(diffTime / (1000 * 60 * 60 * 24 * 365))
@@ -128,7 +128,7 @@ const Experience = () => {
   const getExperienceStats = () => {
     return {
       totalYears: getTotalExperience(),
-      totalProjects: experiences.reduce((acc, exp) => acc + (exp.highlights.projects ? parseInt(exp.highlights.projects) : 5), 0),
+      totalProjects: experiences.reduce((acc, exp) => acc + (exp.highlights.projects ? parseInt(exp.highlights.projects) : 8), 0),
       totalTechnologies: [...new Set(experiences.flatMap(exp => exp.technologies))].length
     }
   }

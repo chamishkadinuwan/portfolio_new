@@ -104,15 +104,15 @@ const Hero = ({ setActiveSection }) => {
 
             <div className="hero-stats">
               <div className="stat">
-                <span className="stat-number">50+</span>
+                <span className="stat-number">10+</span>
                 <span className="stat-label">Projects</span>
               </div>
               <div className="stat">
-                <span className="stat-number">3+</span>
+                <span className="stat-number">2+</span>
                 <span className="stat-label">Years Exp</span>
               </div>
               <div className="stat">
-                <span className="stat-number">25+</span>
+                <span className="stat-number">5+</span>
                 <span className="stat-label">Clients</span>
               </div>
             </div>
