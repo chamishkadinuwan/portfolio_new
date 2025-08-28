@@ -35,17 +35,17 @@ const Contact = () => {
               <div className="contact-details">
                 <div className="contact-item">
                   <strong>Email:</strong>
-                  <span>john.doe@example.com</span>
+                  <span>Chamishkadkulasinghe@gmail.com</span>
                 </div>
                 <div className="contact-item">
                   <strong>Location:</strong>
-                  <span>San Francisco, CA</span>
+                  <span>Colombo, Sri Lanks</span>
                 </div>
               </div>
               <div className="social-links">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://www.linkedin.com/in/chamishka-dinuwan/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                <a href="https://github.com/chamishkadinuwan" target="_blank" rel="noopener noreferrer">GitHub</a>
+
               </div>
             </div>
 
