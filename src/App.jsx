@@ -9,6 +9,7 @@ import Experience from './components/Experience'
 import Education from './components/Education'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Chat from './components/Chat'
 
 function App() {
   const [activeSection, setActiveSection] = useState('home')
@@ -18,6 +19,7 @@ function App() {
       <Navigation activeSection={activeSection} setActiveSection={setActiveSection} />
       <Hero setActiveSection={setActiveSection} />
       <About setActiveSection={setActiveSection} />
+      <Chat setActiveSection={setActiveSection} />
       <Skills setActiveSection={setActiveSection} />
       <Projects setActiveSection={setActiveSection} />
       <Experience setActiveSection={setActiveSection} />
