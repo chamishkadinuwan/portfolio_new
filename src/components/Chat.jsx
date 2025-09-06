@@ -152,7 +152,7 @@ const Chat = () => {
   };
 
   return (
-    <section id="chat" className={`chat-section ${isVisible ? 'visible' : ''}`} ref={chatRef}>
+    <section id="chat" className={`chat-section${isVisible ? ' visible' : ''}`} ref={chatRef}>
       {/* Animated Background */}
       <div className="chat-background">
         <div className="gradient-orb orb-1"></div>
